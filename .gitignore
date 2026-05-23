@@ -7,21 +7,31 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency Directories
+node_modules/
+server/node_modules/
 
-# Editor directories and files
+# Production Builds
+dist/
+dist-ssr/
+out/
+.next/
+
+# Environment Secrets (Crucial Security)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+
+# Editor Directories and Files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-# Secret Environment Files
-server/.env
-.env
